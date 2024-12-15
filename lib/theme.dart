@@ -5,8 +5,8 @@ final theme = ThemeData(
   colorSchemeSeed: Colors.blue,
   textTheme: TextTheme(
     displayLarge: GoogleFonts.poppins(
-      fontWeight: FontWeight.w700,
-      fontSize: 24,
+      fontWeight: FontWeight.w600,
+      fontSize: 22,
       color: Colors.black,
     ),
   ),

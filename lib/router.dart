@@ -4,7 +4,7 @@ import 'homepage.dart';
 import 'login.dart';
 
 final router = GoRouter(
-  initialLocation: '/homepage',
+  initialLocation: '/login',
   routes: [
     GoRoute(
         path: '/login',
