@@ -10,9 +10,12 @@ class LoginPage extends StatefulWidget {
 class _HomepageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Center(
-        child: Text("Login Page"),
+        child: Text(
+          "Login Page",
+          style: Theme.of(context).textTheme.displayLarge,
+        ),
       ),
     );
   }
