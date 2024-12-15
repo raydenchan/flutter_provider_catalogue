@@ -10,9 +10,12 @@ class Homepage extends StatefulWidget {
 class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Center(
-        child: Text("Homepage"),
+        child: Text(
+          "Homepage",
+          style: Theme.of(context).textTheme.displayLarge,
+        ),
       ),
     );
   }
