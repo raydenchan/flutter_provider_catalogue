@@ -9,7 +9,10 @@ class LoginPage extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Container(
-          padding: const EdgeInsets.all(80.0),
+          padding: const EdgeInsets.all(20.0),
+          constraints: const BoxConstraints(
+            maxWidth: 375,
+          ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
