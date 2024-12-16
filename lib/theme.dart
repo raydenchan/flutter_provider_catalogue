@@ -9,5 +9,16 @@ final theme = ThemeData(
       fontSize: 22,
       color: Colors.black,
     ),
+    displaySmall: GoogleFonts.poppins(
+      fontWeight: FontWeight.w400,
+      fontSize: 12,
+      color: Colors.black,
+    ),
+    // Customizing or adding new names (this is your custom category)
+    bodySmall: GoogleFonts.poppins(
+      fontWeight: FontWeight.w500,
+      fontSize: 12,
+      color: Colors.grey,
+    ),
   ),
 );

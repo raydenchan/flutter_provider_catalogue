@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'homepage.dart';
+import 'catalog.dart';
+import 'cart.dart';
 import 'login.dart';
 
 final router = GoRouter(
@@ -12,9 +13,14 @@ final router = GoRouter(
           return const LoginPage();
         }),
     GoRoute(
-        path: '/homepage',
+        path: '/catalog',
         builder: (BuildContext context, GoRouterState state) {
-          return const Homepage();
+          return const CatalogPage();
+        }),
+    GoRoute(
+        path: '/cart',
+        builder: (BuildContext context, GoRouterState state) {
+          return const CartPage();
         }),
   ],
 );

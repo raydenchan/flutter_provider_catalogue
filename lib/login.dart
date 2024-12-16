@@ -14,14 +14,27 @@ class LoginPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                'Welcome',
+                'Sign In',
                 style: Theme.of(context).textTheme.displayLarge,
+              ),
+
+              // Spacing
+              const SizedBox(
+                height: 20,
               ),
 
               // Username textfield
               TextFormField(
                 decoration: const InputDecoration(
                   hintText: 'Username',
+                  hintStyle: TextStyle(
+                    color: Colors.grey,
+                    fontSize: 12,
+                  ),
+                ),
+                style: const TextStyle(
+                  color: Colors.black,
+                  fontSize: 12,
                 ),
               ),
 
@@ -29,17 +42,27 @@ class LoginPage extends StatelessWidget {
               TextFormField(
                 decoration: const InputDecoration(
                   hintText: 'Password',
+                  hintStyle: TextStyle(
+                    color: Colors.grey,
+                    fontSize: 12,
+                  ),
+                ),
+                style: const TextStyle(
+                  color: Colors.black,
+                  fontSize: 12,
                 ),
                 obscureText: true,
               ),
+
+              // Spacing
               const SizedBox(
-                height: 24,
+                height: 20,
               ),
 
               // Submit button
               ElevatedButton(
                 onPressed: () {
-                  context.pushReplacement('/homepage');
+                  context.pushReplacement('/catalog');
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.blueAccent,
