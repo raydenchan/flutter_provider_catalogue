@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'router.dart' as app_router;
-import 'theme.dart' as app_theme;
+import 'util/router.dart' as app_router;
+import 'util/theme.dart' as app_theme;
 import 'models/catalog.dart';
 import 'models/cart.dart';
 

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
-import 'models/cart.dart';
-import 'models/catalog.dart';
+import '../models/cart.dart';
+import '../models/catalog.dart';
 
 class CatalogPage extends StatelessWidget {
   const CatalogPage({super.key});
@@ -62,11 +62,17 @@ class _MyAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return SliverAppBar(
       title: Text('Catalog', style: Theme.of(context).textTheme.displayLarge),
+      titleSpacing: 20.0,
+      backgroundColor: Colors.yellow,
       floating: true,
+      pinned: true,
       actions: [
-        IconButton(
-          icon: const Icon(Icons.shopping_cart),
-          onPressed: () => context.go('/catalog/cart'),
+        Padding(
+          padding: const EdgeInsets.only(left: 0, top: 0, right: 20, bottom: 0),
+          child: IconButton(
+            icon: const Icon(Icons.shopping_cart),
+            onPressed: () => context.go('/catalog/cart'),
+          ),
         ),
       ],
     );

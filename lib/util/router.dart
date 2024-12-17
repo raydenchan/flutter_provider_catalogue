@@ -1,7 +1,7 @@
 import 'package:go_router/go_router.dart';
-import 'catalog.dart';
-import 'cart.dart';
-import 'login.dart';
+import '../view/catalog.dart';
+import '../view/cart.dart';
+import '../view/login.dart';
 
 final router = GoRouter(
   initialLocation: '/login',
