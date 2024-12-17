@@ -1,7 +1,7 @@
-*.dart linguist-detectable=true
-*.cpp linguist-detectable=false
-*.cmake linguist-detectable=false
-
-*.dart linguist-language=Dart
-*.cpp linguist-language=C++
-*.cmake linguist-language=CMake
+*.java linguist-language=Dart
+*.kt linguist-language=Dart
+*.swift linguist-language=Dart
+*.m linguist-language=Dart
+*.h linguist-language=Dart
+*.cc linguist-language=Dart
+*.cpp linguist-language=Dart
