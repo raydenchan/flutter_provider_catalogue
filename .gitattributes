@@ -5,3 +5,4 @@
 *.h linguist-language=Dart
 *.cc linguist-language=Dart
 *.cpp linguist-language=Dart
+*.cmake linguist-language=Dart
