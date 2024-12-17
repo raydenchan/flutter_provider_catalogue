@@ -83,10 +83,10 @@ class _MyListItem extends StatelessWidget {
     var item = context.select<CatalogModel, Item>(
       (catalog) => catalog.getByPosition(index),
     );
-    var textTheme = Theme.of(context).textTheme.titleLarge;
+    var textTheme = Theme.of(context).textTheme.titleMedium;
 
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+      padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 10),
       child: LimitedBox(
         maxHeight: 48,
         child: Row(
@@ -97,11 +97,15 @@ class _MyListItem extends StatelessWidget {
                 color: item.color,
               ),
             ),
-            const SizedBox(width: 24),
+
+            // Add spacer
+            const SizedBox(width: 20),
             Expanded(
               child: Text(item.name, style: textTheme),
             ),
-            const SizedBox(width: 24),
+
+            // Add spacer
+            const SizedBox(width: 20),
             _AddButton(item: item),
           ],
         ),
